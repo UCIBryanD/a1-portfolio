@@ -3,7 +3,6 @@ body {
   margin: 0;
 }
 
-/* This box class is purely used for explaining how the bootstrap grid system works. */
 .box {
   min-height: 50px;
   font-size: 2rem;
