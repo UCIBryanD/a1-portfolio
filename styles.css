@@ -27,3 +27,46 @@ body {
   animation-fill-mode: both;
 }
 
+.gy-10 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.txt-white {
+  color: white;
+}
+
+.custom-gif-bg {
+  position:relative;
+  background-color: #171717;
+}
+
+.custom-gif-bg::before {
+  content:"";
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('images/mask_24fps.gif'); background-position: center center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  filter: brightness(20%);
+}
+
+.custom-gif-child {
+  z-index:1;
+  color:white;
+}
+
+.carousel-fade .carousel-item.active.carousel-item-start,
+.carousel-fade .carousel-item.active.carousel-item-end {
+  transition: opacity 0.4s ease-in-out;
+  opacity: 0;
+}
+
+.carousel-fade .carousel-item-next.carousel-item-start,
+.carousel-fade .carousel-item-prev.carousel-item-end {
+  transition: opacity 0.4s ease-in-out;
+  opacity: 1;
+}
