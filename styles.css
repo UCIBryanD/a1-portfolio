@@ -55,6 +55,15 @@ body {
   color:white;
 }
 
+.smooth-hover {
+  transition: opacity 0.3s ease;
+}
+
+.smooth-hover:hover {
+  opacity: 0.5;
+}
+
+
 .carousel-fade .carousel-item.active.carousel-item-start,
 .carousel-fade .carousel-item.active.carousel-item-end {
   transition: opacity 0.4s ease-in-out;
