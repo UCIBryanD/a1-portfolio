@@ -151,6 +151,48 @@ body {
   background-color: #171717;
 }
 
-.text-hover:hover {
-  animation: fadeIn 1s ease-in-out forwards;
+
+.hover-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-container .hover-text {
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  z-index: 1;
+  transition: opacity 0.3s ease, visibility 0.3s ease; 
+}
+.hover-container:hover .hover-text {
+  visibility: visible;
+  opacity: 1;    
+}
+
+.overlay-text-container {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.overlay-text-container .overlay-text {
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  z-index: 1;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  color: white;
+  background-color: rgba(9, 9, 9, 0.852);
+}
+
+.overlay-text-container:hover .overlay-text {
+  visibility: visible;
+  opacity: 1;   
 }
