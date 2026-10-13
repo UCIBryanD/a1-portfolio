@@ -15,9 +15,15 @@ EMAIL: bryandd1@uci.edu
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- you would link to an external stylesheet here! -->
     <link rel="stylesheet" href="styles.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clarity+City:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   <title>Bryan Dao - Portfolio Site</title>
 </head>
-<body>
+
+<body class="custom-font">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <nav class="navbar navbar-expand-lg navbar-dark" style="background: #171717">
     <div class="container">
@@ -41,59 +47,114 @@ EMAIL: bryandd1@uci.edu
             <a href="#" class="nav-link active" aria-current="page">Experience</a>
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="resume.html" class="nav-link">Resume</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <section class="py-5" style="background-color:#cccccc;">
 
-    <h1></h1>
-    <div class="box px-5 container-fluid min-vh-100 text-center">
-      <div class="row justify-content-center">
-        <div class="col-10">
-          <div class="row justify-content-center gy-3 gx-5">
-            <div class="col-6 col-md-4 d-flex flex-column justify-content-center">
-              <img src="images\btb_mask.png" alt="BDP" class="transition-fade-scroll img-fluid">
-            </div>
-            <div class="col-12 col-md-8">
-              <div class="w-100 h-100 bg-white p-5 transition-fade-scroll align-content-center">
-                <h1 class="fw-bold mb-5">Hi everyone, I'm Bryan.</h1>
-                <p>My name is Bryan Dao. I'm a senior at UCI majoring in Computer Science, and am graduating Spring 2027. Currently, I am making this portfolio site you are looking at.</p>
+
+  
+  <section class="text-center text-break transition-fade-instant" style="background-color:#1f1f1f;">
+    <div class="d-flex container-fluid min-vh-100 justify-content-center">
+      <div class="d-flex blur-dark justify-content-center" style="width: 80%;">
+        <div class="blur-dark-child justify-content-center text-center align-content-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 gy-5">
+                <h1 class="" style="font-size: 4rem;">Fullstack Website + Deployment</h1>
+                <p style="font-size: 2rem;">Related Course: ICS 122B</p>
               </div>
-            </div>
+              <div class="col-12 col-md-3">
+                <p>Bryan Du Dao</p>
+              </div>
+              <div class="col-12 col-md-3">
+                <p>Jonathan Jun Lok Kwok</p>
+              </div>
           </div>
         </div>
-
-        <div class="col-10">
-          <div class="row justify-content-center gy-3 gx-5">
-            <div class="col-6 col-md-4 d-flex flex-column justify-content-center">
-              
-            </div>
-            <div class="col-12 col-md-8">
-              <div class="w-100 h-100 bg-white p-5 transition-fade-scroll align-content-center">
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row justify-content-center">
-        <div class="box col-6">
-          <a href="/about.html"></a>
-        </div>
-        <div class="box col-6">
-          <a href="/experience.html"></a>
-        </div>
-        
-      </div>
-      
       </div>
     </div>
   </section>
+
+
+
+
+
+  <section class="py-5" style="background-color:#cccccc;">
+
+    <h1></h1>
+    
+    <div class="box px-5 container-fluid min-vh-100 text-center">
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <div class="row py-5 justify-content-center gy-3 gx-5">
+            <div class="col-9 col-md-9">
+              <div class="w-100 h-100 bg-white p-5 transition-fade-scroll align-content-center">
+                <h1>Project Description</h1>
+                <p class="text-start">In a group of 2, developed and deployed a full-stack web application (HTML/CSS/Javascript/Java) via AWS and Kubernetes + Docker. Implemented both front-end and back-end systems, such as Database managed by MySQL + JDBC allowing for Full-Text Search and information retrieval with optimized queries.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row py-5 gy-3 gx-5 transition-fade-scroll justify-content-center align-items-center">
+            <div class="col-6 col-lg-3 justify-content-center">
+                <img src="images/vscode-logo.png" alt="VSCode Logo" class="img-fluid">
+            </div>
+            <div class="col-12 col-lg-7">
+              <div class="bg-white h-100 p-5">
+                <h1>Other Programming Experience</h1>
+                <div class="text-start">
+                  <p><strong>Languages: </strong>Python, C, C++, C#, HTML/CSS/Javascript, Java, Lua.</p>
+                  <p><strong>Project - Web Crawler: </strong>Developed and deployed a web crawler to crawl and scan ~100,000 webpages, avoiding dead-ends and traps whilst adhering to standard crawling conventions.</p>
+                  <p><strong>Project - Game Jam: </strong>Created a playable/scalable roguelite game in a group of 4 for GDIM 61 from the ground-up.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row py-5 gy-3 gx-5 transition-fade-scroll justify-content-center align-items-center">
+            <div class="col-6 d-lg-none justify-content-center">
+                <img src="images/DaVinci_Resolve_Studio.png" alt="VSCode Logo" class="img-fluid">
+            </div>
+
+            <div class="col-12 col-lg-7">
+              <div class="bg-white h-100 p-5">
+                <h1>Editing and Media Experience</h1>
+                <div class="text-start">
+                  <p>Adept with video production software such as Davinci Resolve w/Plugins, OBS, Pixlr, Adobe Suite, in association with producing content and maintaining a social media presence for 1,000+ followers.</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-3 justify-content-center">
+                <img src="images/DaVinci_Resolve_Studio.png" alt="VSCode Logo" class="img-fluid">
+            </div>
+          </div>  
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer>
+    <div class="px-5 py-5 container-fluid">
+      <div class="d-flex row justify-content-center">
+        <div class="col-10 text-white">
+          <h1>Contact Me</h1>
+          <hr>
+          <p>Email: <a href="mailto:bryandd1@uci.edu" class="text-white smooth-hover">bryandd1@uci.edu</a></p>
+          <p>Youtube: <a href="https://www.youtube.com/@BryTheBot" target="_blank" rel="noopener noreferrer" class="text-white smooth-hover">BryTheBot</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

@@ -11,7 +11,7 @@ body {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
@@ -19,9 +19,52 @@ body {
   }
 }
 
+@keyframes fadeInL {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeInR {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.transition-fade-instant {
+  opacity: 0; 
+  animation: fadeIn 1s ease-in-out forwards; 
+}
+
 .transition-fade-scroll {
   opacity: 0;
   animation-name: fadeIn;
+  animation-timeline: view();
+  animation-range: entry 0% contain 50%;
+  animation-fill-mode: both;
+}
+
+.transition-left-scroll {
+  opacity: 0;
+  animation-name: fadeInL;
+  animation-timeline: view();
+  animation-range: entry 0% contain 50%;
+  animation-fill-mode: both;
+}
+
+.transition-right-scroll {
+  opacity: 0;
+  animation-name: fadeInR;
   animation-timeline: view();
   animation-range: entry 0% contain 50%;
   animation-fill-mode: both;
@@ -44,7 +87,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('images/mask_24fps.gif'); background-position: center center;
+  background-image: url('images/mask_24fps.gif');
+  background-position: center center;
   background-repeat: no-repeat; 
   background-size: cover; 
   filter: brightness(20%);
@@ -63,6 +107,9 @@ body {
   opacity: 0.5;
 }
 
+.custom-font {
+  font-family: "Clarity City", Arial, Helvetica, sans-serif;
+}
 
 .carousel-fade .carousel-item.active.carousel-item-start,
 .carousel-fade .carousel-item.active.carousel-item-end {
@@ -74,4 +121,36 @@ body {
 .carousel-fade .carousel-item-prev.carousel-item-end {
   transition: opacity 0.4s ease-in-out;
   opacity: 1;
+}
+
+.blur-dark {
+  position:relative;
+}
+
+
+.blur-dark::before {
+  content:"";
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('images/github_desktop.png');
+  background-position: center center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  filter: blur(2px) brightness(30%);
+}
+
+.blur-dark-child {
+  z-index:1;
+  color:white;
+}
+
+.footer {
+  background-color: #171717;
+}
+
+.text-hover:hover {
+  animation: fadeIn 1s ease-in-out forwards;
 }

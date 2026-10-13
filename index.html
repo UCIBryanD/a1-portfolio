@@ -14,10 +14,16 @@ EMAIL: bryandd1@uci.edu
    <!-- you would also link to Bootstrap here! -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- you would link to an external stylesheet here! -->
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clarity+City:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
   <title>Bryan Dao - Portfolio Site</title>
 </head>
-<body>
+<body class="custom-font">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <nav class="navbar navbar-expand-lg navbar-dark" style="background: #171717">
     <div class="container">
@@ -41,7 +47,7 @@ EMAIL: bryandd1@uci.edu
             <a href="experience.html" class="nav-link">Experience</a>
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="resume.html" class="nav-link">Resume</a>
           </li>
         </ul>
       </div>
@@ -50,7 +56,7 @@ EMAIL: bryandd1@uci.edu
 
 
   
-  <section class="py-5 custom-gif-bg text-center text-break">
+  <section class="py-5 custom-gif-bg text-center text-break transition-fade-instant">
     <div class="d-flex container-fluid min-vh-100">
       <div class="custom-gif-child w-100">
         <div id="caption-carousel" class="d-flex w-100 h-100 carousel slide carousel-fade justify-content-center align-items-center" data-bs-ride="carousel" data-bs-touch="false">
@@ -80,7 +86,7 @@ EMAIL: bryandd1@uci.edu
         <div class="col-10">
           <div class="row justify-content-center gy-3 gx-5">
             <div class="col-6 col-md-4 d-flex flex-column justify-content-center">
-              <img src="images\btb_mask.png" alt="BDP" class="transition-fade-scroll img-fluid">
+              <img src="images\btb_mask.png" alt="Bryan Dao Profile Picture" class="transition-fade-scroll img-fluid">
             </div>
             <div class="col-12 col-md-8">
               <div class="w-100 h-100 bg-white p-5 transition-fade-scroll align-content-center">
@@ -94,8 +100,8 @@ EMAIL: bryandd1@uci.edu
 
 
       <div class="row gx-5 gy-5 py-5 justify-content-center">
-        <div class="box col-10 col-lg-4 d-flex flex-column justify-content-center transition-fade-scroll">
-          <a href="about.html">
+        <div class="box col-10 col-lg-4 d-flex flex-column justify-content-center transition-left-scroll">
+          <a href="about.html" class="text-decoration-none">
             <div class="card border-0 bg-transparent smooth-hover">
             <img src="images/btb_sleep.gif" class="card-img-top" alt="About Me GIF">
               <div class="card-body bg-white">
@@ -105,8 +111,8 @@ EMAIL: bryandd1@uci.edu
             
           </a>
         </div>
-        <div class="box col-10 col-lg-4 d-flex flex-column justify-content-center transition-fade-scroll">
-          <a href="experience.html">
+        <div class="box col-10 col-lg-4 d-flex flex-column justify-content-center transition-right-scroll">
+          <a href="experience.html" class="text-decoration-none">
             <div class="card border-0 bg-transparent smooth-hover">
             <img src="images/tools.png" class="card-img-top" alt="Experience Image">
               <div class="card-body bg-white">
@@ -121,5 +127,18 @@ EMAIL: bryandd1@uci.edu
       </div>
     </div>
   </section>
+
+  <footer>
+    <div class="px-5 py-5 container-fluid">
+      <div class="d-flex row justify-content-center">
+        <div class="col-10 text-white">
+          <h1>Contact Me</h1>
+          <hr>
+          <p>Email: <a href="mailto:bryandd1@uci.edu" class="text-white smooth-hover">bryandd1@uci.edu</a></p>
+          <p>Youtube: <a href="https://www.youtube.com/@BryTheBot" target="_blank" rel="noopener noreferrer" class="text-white smooth-hover">BryTheBot</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
