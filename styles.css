@@ -3,10 +3,13 @@ body {
   margin: 0;
 }
 
+/* generic sizer for div testing */
 .box {
   min-height: 50px;
   font-size: 2rem;
 }
+
+/* animations */
 
 @keyframes fadeIn {
   from {
@@ -75,6 +78,8 @@ body {
   color: white;
 }
 
+
+/* solution for img-bg of low opacity */
 .custom-gif-bg {
   position:relative;
   background-color: #171717;
@@ -99,6 +104,8 @@ body {
   color:white;
 }
 
+
+
 .smooth-hover {
   transition: opacity 0.3s ease;
 }
@@ -111,6 +118,7 @@ body {
   font-family: "Clarity City", Arial, Helvetica, sans-serif;
 }
 
+/* have carousel fade correctly with text-only */
 .carousel-fade .carousel-item.active.carousel-item-start,
 .carousel-fade .carousel-item.active.carousel-item-end {
   transition: opacity 0.4s ease-in-out;
@@ -123,10 +131,11 @@ body {
   opacity: 1;
 }
 
+
+/* similar to custom gif bg option */
 .blur-dark {
   position:relative;
 }
-
 
 .blur-dark::before {
   content:"";
@@ -152,6 +161,7 @@ body {
 }
 
 
+/* darken hover */
 .hover-container {
   position: relative;
   display: inline-block;
@@ -169,6 +179,10 @@ body {
   opacity: 1;    
 }
 
+
+
+
+/* text-overlay on hover */
 .overlay-text-container {
   position: relative;
   display: inline-block;
